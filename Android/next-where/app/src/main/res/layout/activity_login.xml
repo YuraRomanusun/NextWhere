@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="16.67dp"
+        android:paddingRight="16.67dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dp_150"
+            android:scaleType="centerInside"
+            android:src="@mipmap/img_logo"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/login_logo"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80.5dp"
+            android:hint="@string/hintReservation"
+            >
+
+            <br.com.sapereaude.maskedEditText.MaskedEditText
+                android:id="@+id/edtReservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                mask:allowed_chars="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                mask:keep_hint="false"
+                mask:mask="##-###-#-###-##" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27.33dp">
+
+            <com.puma.nextwhere.customview.CustomFontRobotoRegularEditText
+                android:id="@+id/etReservationEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_horizontal"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/reservation_email"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <com.puma.nextwhere.customview.CustomFontRobotoRegular
+            android:id="@+id/lyt_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:background="@mipmap/ic_button"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/link_reservation"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

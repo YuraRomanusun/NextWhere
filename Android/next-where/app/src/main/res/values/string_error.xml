@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_username_length">User name is empty</string>
+    <string name="error_email">Email is empty</string>
+    <string name="error_task_incomplete">Complete at least 3 task</string>
+    <string name="error_select_image">Image not taken</string>
+</resources>

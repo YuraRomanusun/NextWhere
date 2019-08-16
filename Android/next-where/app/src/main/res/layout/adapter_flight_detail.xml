@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/departing_flightName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/colorPrimary"
+            app:autoSizeMaxTextSize="@dimen/sp_15"
+            app:autoSizeMinTextSize="@dimen/sp_8"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toStartOf="@+id/dash"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toStartOf="@+id/departing_flightNumber"
+            app:layout_constraintStart_toEndOf="@+id/departing_flightName"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="-" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/departing_flightNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/sp_10"
+            app:layout_constraintBaseline_toBaselineOf="@+id/departing_flightName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dash"
+            app:layout_constraintTop_toTopOf="@+id/departing_flightName" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/departing_referenceNumber"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/departing_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_2"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_calendar"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/departing_referenceNumber" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/departing_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_time"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/departing_date" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/departing_leaveInTitle"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableStart="@drawable/ic_fly_out"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/departing_time"
+        tool:text="@string/leavingTitle" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/departing_arriving"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableStart="@drawable/ic_fly_in"
+        android:textSize="@dimen/sp_10"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toBottomOf="@+id/departing_leaveInTitle"
+        tool:text="@string/arrivingTitle" />
+
+</android.support.constraint.ConstraintLayout>

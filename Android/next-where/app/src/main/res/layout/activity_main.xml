@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.puma.nextwhere.activity.MainActivity">
+    <include
+        android:id="@+id/tool"
+        layout="@layout/toolbar" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_below="@+id/tool"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:background="@color/grey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+        <ImageView
+            android:id="@+id/imgDestination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#99000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="YOUR ADVANTURE STARTS IN"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"/>
+
+            <com.puma.nextwhere.customview.CustomFontRobotoBold
+                android:id="@+id/txvCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textAllCaps="true"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"/>
+            <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                android:id="@+id/txvVideoAgain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:text="WATCH DESTINATION VIDEO AGAIN"
+                android:drawableRight="@mipmap/player"
+                android:textColor="@color/white"
+                android:drawablePadding="7dp"
+                android:layout_marginTop="7dp"
+                android:padding="7dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    app:srcCompat="@mipmap/ic_view_my_trip_details" />
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_view_my_trip_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:drawableTop="@mipmap/ic_view_my_trip_details"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_view_my_trip_details_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/ic_view_my_trip_details_selected"
+                    android:gravity="center_horizontal"
+                    android:text="@string/viewmytripdetail"
+                    android:textColor="@color/colorPrimary1"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/txv_view_my_trip_details"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_weight="1"
+                    android:text="@string/viewmytripdetail" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_view_unlocked_surprises"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="0dp"
+                    android:drawableTop="@mipmap/ic_view_unlocked_surprises"
+                    android:gravity="center_horizontal"
+                    android:text="@string/viewunlocksuprise"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_view_unlocked_surprises_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:drawableTop="@mipmap/ic_view_unlocked_surprises_selected"
+                    android:gravity="center_horizontal"
+                    android:text="@string/viewunlocksuprise"
+                    android:textColor="@color/colorPrimary1"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_explore_city_guide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="0dp"
+                    android:drawableTop="@mipmap/ic_explorer_guide"
+                    android:gravity="center_horizontal"
+                    android:text="@string/explore_city_guide"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_explore_city_guide_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_explorer_guide_selected"
+                    android:drawablePadding="10dp"
+                    android:text="@string/explore_city_guide"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary1"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_view_travel_journal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="0dp"
+                    android:drawableTop="@mipmap/ic_view_travel_journal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/viewtravelgeneral"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_view_travel_journal_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_view_travel_journal_selected"
+                    android:drawablePadding="10dp"
+                    android:text="@string/viewtravelgeneral"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary1"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_text_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="0dp"
+                    android:drawableTop="@mipmap/ic_text_support"
+                    android:gravity="center_horizontal"
+                    android:text="@string/textsupport"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <com.puma.nextwhere.customview.CustomFontRobotoRegular
+                    android:id="@+id/txv_text_support_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:drawableTop="@mipmap/ic_text_support_selected"
+                    android:drawablePadding="10dp"
+                    android:text="@string/textsupport"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary1"
+                    android:visibility="gone"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvLogOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:text="LOG OUTTTT"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+    <View
+        android:layout_width="58dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp"/>
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/hotelImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/guideline1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/hotelTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/guideline1"
+        app:layout_constraintRight_toLeftOf="@+id/hotelRating"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:text="@string/dummy_hotelname" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        android:id="@+id/hotelRating"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:rating="3.5"
+        app:layout_constraintBottom_toTopOf="@+id/hotelLocation"
+        app:layout_constraintHorizontal_weight="0.4"
+        app:layout_constraintLeft_toRightOf="@+id/hotelTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mrb_progressTint="@color/colorAccent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/hotelLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableStart="@mipmap/ic_location"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="@dimen/sp_10"
+
+        app:layout_constraintLeft_toLeftOf="@+id/hotelTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotelTitle"
+        tool:text="@string/dummy_location1" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/checkInTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableStart="@mipmap/ic_check_in"
+        android:textSize="@dimen/sp_10"
+
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="@+id/hotelTitle"
+        app:layout_constraintRight_toLeftOf="@+id/checkOutTitle"
+        app:layout_constraintTop_toBottomOf="@+id/hotelLocation"
+        tool:text="@string/checkInTitle" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/checkOutTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/dp_5"
+        android:drawableStart="@mipmap/ic_check_out"
+        android:textSize="@dimen/sp_10"
+
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toRightOf="@+id/checkInTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkInTitle"
+        tool:text="@string/checkOutTitle" />
+
+</android.support.constraint.ConstraintLayout>

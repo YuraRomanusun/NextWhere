@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unlock_content">
+        <item>Take picture at Coffee Shop</item>
+        <item>Travel to Brisbane, Australia</item>
+        <item>Write your first review</item>
+        <item>Eat at your favourite restaurant</item>
+        <item>Verify account using your email</item>
+    </string-array>
+    <integer-array name="right_images">
+        <item>@drawable/ic_camera_unlock</item>
+        <item>@drawable/ic_square</item>
+        <item>@drawable/ic_star</item>
+        <item>@drawable/ic_heart</item>
+        <item>@drawable/ic_settings</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,33 @@
+PODS:
+  - AKMaskField (2.0.3)
+  - Alamofire (4.5.1)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - FBSDKCoreKit (4.28.0):
+    - Bolts (~> 1.7)
+  - FBSDKShareKit (4.28.0):
+    - FBSDKCoreKit
+  - youtube-ios-player-helper (0.1.6)
+
+DEPENDENCIES:
+  - AKMaskField
+  - Alamofire (~> 4.4)
+  - FBSDKCoreKit
+  - FBSDKShareKit
+  - youtube-ios-player-helper (~> 0.1.4)
+
+SPEC CHECKSUMS:
+  AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  FBSDKCoreKit: ca961e279113f691fd83dc634c0bbad9d4e3f370
+  FBSDKShareKit: 4f525556e0df4cf0f574cb3f01c675434f29d477
+  youtube-ios-player-helper: 21ab92db027c7ff86cb17a3843a3f6eafc8158d2
+
+PODFILE CHECKSUM: 0ac3e63e5e9358a66e2e25efd031d8a7fb2727f8
+
+COCOAPODS: 1.4.0

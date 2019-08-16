@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_150">
+
+
+    <ImageView
+        android:id="@+id/imgDestination"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.puma.nextwhere.customview.CustomFontRobotoRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="@string/homeVideoTitle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20" />
+
+        <com.puma.nextwhere.customview.CustomFontRobotoBold
+            android:id="@+id/txvCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_30" />
+
+        <com.puma.nextwhere.customview.CustomFontRobotoRegular
+            android:id="@+id/txvVideoAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:drawableEnd="@mipmap/player"
+            android:drawablePadding="7dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/home_watch_video_again"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_10" />
+
+    </LinearLayout>
+
+</FrameLayout>

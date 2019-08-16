@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_prev_black"
+            android:drawableStart="@drawable/ic_prev_black"
+            android:padding="@dimen/dp_10"
+            android:text="@string/viewtravelgeneral"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/mapLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/more"
+            app:layout_constraintTop_toTopOf="parent"
+            map:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="@dimen/dp_10"
+            android:src="@drawable/ic_attach"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapLayout"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            map:liteMode="true"
+            map:mapType="none" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mapLayout">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/userInfo"
+                style="@style/commonMargin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapLayout">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/userImage"
+                        android:layout_width="@dimen/userProfilePicSize"
+                        android:layout_height="@dimen/userProfilePicSize"
+                        android:layout_margin="@dimen/dp_10"
+                        android:src="@drawable/man_ballon"
+                        app:layout_constraintBottom_toBottomOf="@+id/userPassport"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/userName"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/userName"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@android:color/transparent"
+                        android:text="@string/dummy_userName1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editTextSize"
+                        app:layout_constraintBottom_toTopOf="@+id/userPassport"
+                        app:layout_constraintLeft_toRightOf="@+id/userImage"
+                        app:layout_constraintRight_toLeftOf="@+id/edit"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/userPassport"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="top"
+                        android:text="@string/dummy_travel"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editTextSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="@+id/userName"
+                        app:layout_constraintRight_toRightOf="@+id/userName"
+                        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+                    <ImageButton
+                        android:id="@+id/edit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp_5"
+                        android:adjustViewBounds="true"
+                        android:background="?android:selectableItemBackground"
+                        android:src="@drawable/edit_blue"
+                        app:layout_constraintBottom_toBottomOf="@+id/userPassport"
+                        app:layout_constraintLeft_toRightOf="@+id/userName"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/userExpanse"
+                style="@style/commonMargin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_2"
+                app:contentPadding="@dimen/dp_10">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_moneySpentTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_moneySpent"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tv_favTitle"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/edit_moneySpent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/dp_8"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/edit_blue"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:drawableStart="@mipmap/bussiness"
+                        android:inputType="numberDecimal"
+                        android:text="@string/dummy_money"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editTextSize"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintLeft_toLeftOf="@+id/tv_moneySpentTitle"
+                        app:layout_constraintRight_toRightOf="@+id/tv_moneySpentTitle"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_moneySpentTitle" />
+
+                    <TextView
+                        android:id="@+id/tv_favTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_favRestraunt"
+                        app:layout_constraintBottom_toTopOf="@+id/et_fav"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintLeft_toRightOf="@+id/tv_moneySpentTitle"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_fav"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_5"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/edit_blue"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:drawableStart="@mipmap/fav"
+                        android:inputType="text"
+                        android:text="@string/dummy_resturant"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editTextSize"
+                        app:layout_constraintBottom_toTopOf="@+id/tv_likeTitle"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintLeft_toLeftOf="@+id/tv_favTitle"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tv_likeTitle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:text="@string/dummy_loveit"
+                        app:layout_constraintBottom_toTopOf="@+id/et_like"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_like"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:drawableEnd="@drawable/edit_blue"
+                        android:drawablePadding="@dimen/dp_5"
+                        android:inputType="text"
+                        android:text="@string/dummy_love"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/editTextSize"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                style="@style/commonMargin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/downloadTicket"
+                style="@style/commonMargin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/downloadticket_bg"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

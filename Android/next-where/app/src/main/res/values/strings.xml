@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">NextWhere</string>
+    <string name="facebook_id">1990629167815897</string>
+    <string name="font_bold">bold.ttf</string>
+    <string name="bold_italic">bold_italic.ttf</string>
+    <string name="italic">italic.ttf</string>
+    <string name="light">light.ttf</string>
+    <string name="light_italic">light_italic.ttf</string>
+    <string name="regular">regular.ttf</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="viewmytripdetail">View My Trip Details</string>
+    <string name="viewunlocksuprise">Unlock Surprises</string>
+    <string name="explore_city_guide">Explore City Guide</string>
+    <string name="connectwithothernexter">Connect with another nexters</string>
+    <string name="viewtravelgeneral">Travel Journal</string>
+    <string name="textsupport">Text Support</string>
+    <string name="connectwithothernexters">Connect with another\nnexters</string>
+    <string name="tripDetails">My Trip Details</string>
+    <string name="dummy_location">Chicago, USA</string>
+    <string name="dummy_hotelname"><![CDATA[Hilton Hotels & Resorts]]></string>
+    <string name="dummy_location1">Hilton Street 23/1 Chicago, USA</string>
+    <string name="checkInTitle"><font color="#4d4d4d">Check In</font>\n%s</string>
+    <string name="checkOutTitle"><font color='#4d4d4d'>Check out</font>\n%s</string>
+    <string name="dummy_transportname">American Airlines</string>
+    <string name="leavingTitle"><font color='#4d4d4d'>Leaving from</font>\n%s</string>
+    <string name="arrivingTitle"><font color='#4d4d4d'>Arriving at</font>\n%s</string>
+    <string name="travelInfo">TRAVELERS INFO</string>
+    <string name="dummy_passportNumber"><font color='#107f93'>Passport:</font> 23423423</string>
+    <string name="dummy_userName"><font color='#ff5a58'>Name:</font> Belly Kennedy</string>
+    <string name="dummy_congration"><big>CONGRATULATIONS!</big>\n<small>YOU UNLOCKED A SURPRISE!</small></string>
+    <string name="dummy_offer">2 tickets to see the Miami\nHeat vs. Toronto Raptors</string>
+    <string name="dummy_offerDate">Saturday, Jan 23,2017 at 2:00 pm</string>
+    <string name="downloadTickets">Download Tickets</string>
+    <string name="nearMe">Near Me</string>
+    <string name="eat">Eat</string>
+    <string name="drink">Drink</string>
+    <string name="attraction">Attraction</string>
+    <string name="events">Events</string>
+    <string name="dummy_title">New Campo Agentino</string>
+    <string name="dummy_cousine">Cusine: <font color="#a3a3a3">Argentinian</font></string>
+    <string name="dummy_local">Why locals love it: <font color='#a3a3a3'>Amazing food</font></string>
+    <string name="dummy_price">Price: <font color='#107f93'>$100</font></string>
+    <string name="price">Price:</string>
+    <string name="downloadLocation">Download for offline use</string>
+    <string name="dummy_userName1">Belly Kennedy</string>
+    <string name="dummy_travel">Travelling to Chicago</string>
+    <string name="dummy_moneySpent">MONEY SPENT</string>
+    <string name="dummy_money">$900.00</string>
+    <string name="dummy_favRestraunt">Favourite Restaurant</string>
+    <string name="dummy_resturant">New Campo Argento</string>
+    <string name="dummy_loveit">I LOVE IT BECAUSE</string>
+    <string name="dummy_love">The food is really great and it taste well.</string>
+    <string name="send">SEND</string>
+    <string name="yourMessage">Your message</string>
+    <string name="save">Save</string>
+    <string name="emptyField">Empty field</string>
+    <string name="error_message">Invalid information.</string>
+    <string name="noData">No Data Found</string>
+    <string name="visitorName">Chat Name*</string>
+    <string name="chatEmail">Unique E-mail address*</string>
+    <string name="chatPhone">Unique phone number</string>
+    <string name="chatHelpText">Fill the below details to begin chat and connect with others in one go.</string>
+    <string name="beginChat">Begin Chat</string>
+    <string name="youtubeApiKey">AIzaSyBXuXtCx4Oe4ZGROwr3tMkZQ_ZeJaDD0as</string>
+    <string name="getYourSurprise">VIEW UNLOCKED SURPRISES</string>
+    <string name="complete_task">Complete the tasks to unlock</string>
+    <string name="upload">Upload</string>
+    <string name="camera">Camera</string>
+    <string name="takePhoto">Take a photo at a Coffee Shop</string>
+    <string name="onImageUpload">Congratulations %s, Task Completed!</string>
+    <string name="done">Done</string>
+    <string name="msg_no_camera">Camera not found</string>
+    <string name="offerVideo">Your trip video</string>
+    <string name="homeVideoTitle">YOUR ADVENTURE STARTS IN</string>
+    <string name="home_watch_video_again">WATCH DESTINATION VIDEO AGAIN</string>
+    <string name="log_out"><u>LOG OUT</u></string>
+    <string name="link_reservation">Link Reservation</string>
+    <string name="reservation_email">Reservation Email</string>
+    <string name="enter_reservation_code">Enter Reservation Code</string>
+    <string name="_17f38s00701022">17F38S00701022</string>
+    <string name="ref_value">Ref %s</string>
+    <string name="surprise">Surprise!</string>
+    <string name="surpriseText">SURPRISE %s of %s</string>
+    <string name="surpriseTitle">View Unlock Surprise</string>
+    <string name="code">CODE %s</string>
+    <string name="hintReservation">Enter Reservation Code</string>
+    <string name="error_complete_previous_task">Unlock previous task first.</string>
+
+    <string name="submit"><u>SUBMIT</u></string>
+    <string name="question">Question</string>
+    <string name="checkIn">Check-In</string>
+    <string name="checkinText">Register a visit in the J Parker RoofTop</string>
+    <string name="task_completed">Task Completed</string>
+    <string name="skip"><![CDATA[Skip Video>>]]></string>
+    <string name="enter_answer">Enter answer</string>
+    <string name="error_incorrect_answer">Incorrect Answer</string>
+    <string name="shareImage">Share your image on</string>
+    <string name="userLocation">Your current location is %s</string>
+    <string name="dummy_text">Your current location in .............................................................</string>
+    <string name="error_task_all_incomplete">Complete all the tasks</string>
+    <string name="traveling_to">Travelling to %s</string>
+    <string name="recordUpdated">Update SuccessFull</string>
+    <string name="missingPermission"><u>Runtime Permission Missing</u></string>
+    <string name="request_permission">Request Permission Again</string>
+    <string name="error_permission_location">App require location permission to provide better suggestion near you. Without
+    permission app didn't works correctly</string>
+    <string name="hotel">Hotel</string>
+    <string name="your_location">Your location</string>
+    <string name="get_driving_direction">Get driving direction</string>
+
+    <string name="wait_hey">Hey </string>
+    <string name="wait_message_1">We know you\'re anxious...</string>
+    <string name="wait_message_2">Hold tight...</string>
+    <string name="wait_message_3">You will find out your destination in:</string>
+    <string name="wait_days">Days</string>
+    <string name="wait_hours">Hours</string>
+    <string name="wait_minutes">Mins</string>
+</resources>
